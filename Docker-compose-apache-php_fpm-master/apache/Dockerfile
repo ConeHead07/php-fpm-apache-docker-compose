@@ -1,6 +1,5 @@
 # Serveur apache
-FROM debian:latest
-MAINTAINER Arnaud POINTET <arnaud.pointet@gmail.com>
+FROM debian:buster-slim
 
 RUN echo 'deb http://ftp.fr.debian.org/debian/ jessie non-free' >> /etc/apt/sources.list
 RUN echo 'deb-src http://ftp.fr.debian.org/debian/ jessie non-free' >> /etc/apt/sources.list
