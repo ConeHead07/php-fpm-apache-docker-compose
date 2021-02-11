@@ -1,6 +1,5 @@
 # Serveur apache
-FROM php:fpm
-MAINTAINER Arnaud POINTET <arnaud.pointet@gmail.com>
+FROM php:7.3-fpm
 
 RUN apt-get update && apt-get install -y zlib1g-dev libicu-dev g++ libmcrypt-dev 
 RUN docker-php-ext-configure intl
